@@ -16,7 +16,7 @@ namespace GoCardlessPro\Resources;
  * @property-read $customer_notifications
  * @property-read $details
  * @property-read $id
- * @property-read $links
+ * @property-read mixed $links
  * @property-read $metadata
  * @property-read $resource_metadata
  * @property-read $resource_type
@@ -47,7 +47,7 @@ class Event extends BaseResource
     protected $customer_notifications;
 
     /**
-     * 
+     *
      */
     protected $details;
 
@@ -57,7 +57,7 @@ class Event extends BaseResource
     protected $id;
 
     /**
-     * 
+     *
      */
     protected $links;
 
@@ -65,7 +65,7 @@ class Event extends BaseResource
      * The metadata that was passed when making the API request that triggered
      * the event
      * (for instance, cancelling a mandate).
-     * 
+     *
      * This field will only be populated if the `details[origin]` field is `api`
      * otherwise it will be an empty object.
      */
