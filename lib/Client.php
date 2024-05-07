@@ -71,76 +71,76 @@ class Client
         $this->api_client = new \GoCardlessPro\Core\ApiClient($http_client, $config);
 
         // Instantiate the services for each property
-        
+
         $this->services['bank_authorisations'] = new Services\BankAuthorisationsService($this->api_client);
-        
+
         $this->services['bank_details_lookups'] = new Services\BankDetailsLookupsService($this->api_client);
-        
+
         $this->services['billing_requests'] = new Services\BillingRequestsService($this->api_client);
-        
+
         $this->services['billing_request_flows'] = new Services\BillingRequestFlowsService($this->api_client);
-        
+
         $this->services['billing_request_templates'] = new Services\BillingRequestTemplatesService($this->api_client);
-        
+
         $this->services['blocks'] = new Services\BlocksService($this->api_client);
-        
+
         $this->services['creditors'] = new Services\CreditorsService($this->api_client);
-        
+
         $this->services['creditor_bank_accounts'] = new Services\CreditorBankAccountsService($this->api_client);
-        
+
         $this->services['currency_exchange_rates'] = new Services\CurrencyExchangeRatesService($this->api_client);
-        
+
         $this->services['customers'] = new Services\CustomersService($this->api_client);
-        
+
         $this->services['customer_bank_accounts'] = new Services\CustomerBankAccountsService($this->api_client);
-        
+
         $this->services['customer_notifications'] = new Services\CustomerNotificationsService($this->api_client);
-        
+
         $this->services['events'] = new Services\EventsService($this->api_client);
-        
+
         $this->services['instalment_schedules'] = new Services\InstalmentSchedulesService($this->api_client);
-        
+
         $this->services['institutions'] = new Services\InstitutionsService($this->api_client);
-        
+
         $this->services['mandates'] = new Services\MandatesService($this->api_client);
-        
+
         $this->services['mandate_imports'] = new Services\MandateImportsService($this->api_client);
-        
+
         $this->services['mandate_import_entries'] = new Services\MandateImportEntriesService($this->api_client);
-        
+
         $this->services['mandate_pdfs'] = new Services\MandatePdfsService($this->api_client);
-        
+
         $this->services['negative_balance_limits'] = new Services\NegativeBalanceLimitsService($this->api_client);
-        
+
         $this->services['payer_authorisations'] = new Services\PayerAuthorisationsService($this->api_client);
-        
+
         $this->services['payments'] = new Services\PaymentsService($this->api_client);
-        
+
         $this->services['payouts'] = new Services\PayoutsService($this->api_client);
-        
+
         $this->services['payout_items'] = new Services\PayoutItemsService($this->api_client);
-        
+
         $this->services['redirect_flows'] = new Services\RedirectFlowsService($this->api_client);
-        
+
         $this->services['refunds'] = new Services\RefundsService($this->api_client);
-        
+
         $this->services['scenario_simulators'] = new Services\ScenarioSimulatorsService($this->api_client);
-        
+
         $this->services['scheme_identifiers'] = new Services\SchemeIdentifiersService($this->api_client);
-        
+
         $this->services['subscriptions'] = new Services\SubscriptionsService($this->api_client);
-        
+
         $this->services['tax_rates'] = new Services\TaxRatesService($this->api_client);
-        
+
         $this->services['transferred_mandates'] = new Services\TransferredMandatesService($this->api_client);
-        
+
         $this->services['verification_details'] = new Services\VerificationDetailsService($this->api_client);
-        
+
         $this->services['webhooks'] = new Services\WebhooksService($this->api_client);
-        
+
     }
 
-    
+
     /**
      * Service for interacting with bank authorisations
      *
@@ -153,7 +153,7 @@ class Client
         }
         return $this->services['bank_authorisations'];
     }
-    
+
     /**
      * Service for interacting with bank details lookups
      *
@@ -166,7 +166,7 @@ class Client
         }
         return $this->services['bank_details_lookups'];
     }
-    
+
     /**
      * Service for interacting with billing requests
      *
@@ -179,7 +179,7 @@ class Client
         }
         return $this->services['billing_requests'];
     }
-    
+
     /**
      * Service for interacting with billing request flows
      *
@@ -192,7 +192,7 @@ class Client
         }
         return $this->services['billing_request_flows'];
     }
-    
+
     /**
      * Service for interacting with billing request templates
      *
@@ -205,7 +205,7 @@ class Client
         }
         return $this->services['billing_request_templates'];
     }
-    
+
     /**
      * Service for interacting with blocks
      *
@@ -218,7 +218,7 @@ class Client
         }
         return $this->services['blocks'];
     }
-    
+
     /**
      * Service for interacting with creditors
      *
@@ -231,7 +231,7 @@ class Client
         }
         return $this->services['creditors'];
     }
-    
+
     /**
      * Service for interacting with creditor bank accounts
      *
@@ -244,7 +244,7 @@ class Client
         }
         return $this->services['creditor_bank_accounts'];
     }
-    
+
     /**
      * Service for interacting with currency exchange rates
      *
@@ -257,7 +257,7 @@ class Client
         }
         return $this->services['currency_exchange_rates'];
     }
-    
+
     /**
      * Service for interacting with customers
      *
@@ -270,7 +270,7 @@ class Client
         }
         return $this->services['customers'];
     }
-    
+
     /**
      * Service for interacting with customer bank accounts
      *
@@ -283,7 +283,7 @@ class Client
         }
         return $this->services['customer_bank_accounts'];
     }
-    
+
     /**
      * Service for interacting with customer notifications
      *
@@ -296,7 +296,7 @@ class Client
         }
         return $this->services['customer_notifications'];
     }
-    
+
     /**
      * Service for interacting with events
      *
@@ -309,7 +309,7 @@ class Client
         }
         return $this->services['events'];
     }
-    
+
     /**
      * Service for interacting with instalment schedule
      *
@@ -322,7 +322,7 @@ class Client
         }
         return $this->services['instalment_schedules'];
     }
-    
+
     /**
      * Service for interacting with institutions
      *
@@ -335,7 +335,7 @@ class Client
         }
         return $this->services['institutions'];
     }
-    
+
     /**
      * Service for interacting with mandates
      *
@@ -348,7 +348,7 @@ class Client
         }
         return $this->services['mandates'];
     }
-    
+
     /**
      * Service for interacting with mandate imports
      *
@@ -361,7 +361,7 @@ class Client
         }
         return $this->services['mandate_imports'];
     }
-    
+
     /**
      * Service for interacting with mandate import entries
      *
@@ -374,7 +374,7 @@ class Client
         }
         return $this->services['mandate_import_entries'];
     }
-    
+
     /**
      * Service for interacting with mandate pdfs
      *
@@ -387,7 +387,7 @@ class Client
         }
         return $this->services['mandate_pdfs'];
     }
-    
+
     /**
      * Service for interacting with negative balance limit
      *
@@ -400,7 +400,7 @@ class Client
         }
         return $this->services['negative_balance_limits'];
     }
-    
+
     /**
      * Service for interacting with payer authorisations
      *
@@ -413,7 +413,7 @@ class Client
         }
         return $this->services['payer_authorisations'];
     }
-    
+
     /**
      * Service for interacting with payments
      *
@@ -426,7 +426,7 @@ class Client
         }
         return $this->services['payments'];
     }
-    
+
     /**
      * Service for interacting with payouts
      *
@@ -439,7 +439,7 @@ class Client
         }
         return $this->services['payouts'];
     }
-    
+
     /**
      * Service for interacting with payout items
      *
@@ -452,7 +452,7 @@ class Client
         }
         return $this->services['payout_items'];
     }
-    
+
     /**
      * Service for interacting with redirect flows
      *
@@ -465,7 +465,7 @@ class Client
         }
         return $this->services['redirect_flows'];
     }
-    
+
     /**
      * Service for interacting with refunds
      *
@@ -478,7 +478,7 @@ class Client
         }
         return $this->services['refunds'];
     }
-    
+
     /**
      * Service for interacting with scenario simulators
      *
@@ -491,7 +491,7 @@ class Client
         }
         return $this->services['scenario_simulators'];
     }
-    
+
     /**
      * Service for interacting with scheme identifiers
      *
@@ -504,7 +504,7 @@ class Client
         }
         return $this->services['scheme_identifiers'];
     }
-    
+
     /**
      * Service for interacting with subscriptions
      *
@@ -517,7 +517,7 @@ class Client
         }
         return $this->services['subscriptions'];
     }
-    
+
     /**
      * Service for interacting with tax rates
      *
@@ -530,7 +530,7 @@ class Client
         }
         return $this->services['tax_rates'];
     }
-    
+
     /**
      * Service for interacting with transferred mandate
      *
@@ -543,7 +543,7 @@ class Client
         }
         return $this->services['transferred_mandates'];
     }
-    
+
     /**
      * Service for interacting with verification details
      *
@@ -556,7 +556,7 @@ class Client
         }
         return $this->services['verification_details'];
     }
-    
+
     /**
      * Service for interacting with webhooks
      *
@@ -569,7 +569,7 @@ class Client
         }
         return $this->services['webhooks'];
     }
-    
+
     private function getUrlForEnvironment($environment)
     {
         $environment_urls = array(
@@ -587,7 +587,7 @@ class Client
     /**
      * Ensures a config is valid and sets defaults where required
      *
-     * @param array[string]mixed $config the client configuration options
+     * @param array<string, mixed> $config the client configuration options
      */
     private function validate_config(&$config)
     {
